@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Oswald|Rufina&display=swap");
+.navbar {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 9999; }
+  .navbar-logo {
+    width: 15rem;
+    padding: 0 1rem; }
+    .navbar-logo-img {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover; }
+  .navbar-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem; }
+    .navbar-button-book {
+      font-size: 1.3rem;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-right: 5rem;
+      padding: 1.2rem 7rem;
+      border: 1px solid #F6D478;
+      color: #F6D478;
+      cursor: pointer; }
+      .navbar-button-book:hover {
+        background: #F6D478;
+        color: #ffff; }
+    .navbar-button-hamburger {
+      padding: 1rem;
+      cursor: pointer; }
+  .navbar-down {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #161A28;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 5rem; }
+    .navbar-down-content {
+      width: 60%;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      display: grid;
+      grid-template-rows: repeat(2, 22rem); }
+      .navbar-down-content-slogan {
+        color: #9B9B9B;
+        font-size: 8rem; }
+        .navbar-down-content-slogan-h1 {
+          font-weight: 700;
+          padding: 2rem 0 4rem 0;
+          display: inline-block;
+          border-bottom: 1px solid #9B9B9B; }
+    .navbar-down-link {
+      font-size: 6rem;
+      padding: 2rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      font-family: "Rufina", serif; }
+      .navbar-down-link-item {
+        list-style: none; }
+        .navbar-down-link-item a:hover {
+          cursor: pointer;
+          color: #F6D478;
+          border-bottom: 1px solid #F6D478; }
+    .navbar-down-bookside {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      width: 30%;
+      transform: translateY(-50%); }
+      .navbar-down-bookside p {
+        font-family: "Muli", sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        line-height: 2;
+        color: #9B9B9B;
+        margin-top: 2rem; }
+    .navbar-down-bottom {
+      color: #ffff;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 2rem;
+      font-size: 4rem;
+      font-weight: 900;
+      font-family: "Muli", sans-serif; }
+      .navbar-down-bottom-item-1 {
+        display: flex;
+        align-items: flex-end;
+        margin-right: auto; }
+        .navbar-down-bottom-item-1 a {
+          cursor: pointer;
+          padding-bottom: 2px; }
+          .navbar-down-bottom-item-1 a:not(:last-child) {
+            margin-right: 5rem; }
+          .navbar-down-bottom-item-1 a:hover {
+            border-bottom: 1px solid #ffff; }
+      .navbar-down-bottom-item-2 {
+        font-family: "Oswald", sans-serif; }
+        .navbar-down-bottom-item-2-phone {
+          text-align: end;
+          color: #F6D478;
+          margin-bottom: 1rem; }
+        .navbar-down-bottom-item-2-address {
+          font-weight: 400; }
+
+.home-top-content {
+  background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/home/home-top.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+*, body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  height: 500rem; }

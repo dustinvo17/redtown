@@ -1,0 +1,11 @@
+@import '../var';
+
+
+.home-top-content {
+    background-image:linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40,0.6)), url("../img/home/home-top.jpg") ;
+    height:100vh;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
