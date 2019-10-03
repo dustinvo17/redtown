@@ -2,10 +2,178 @@
 
 
 .home-top-content {
-    background-image:linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40,0.6)), url("../img/home/home-top.jpg") ;
-    height:100vh;
+    background-image: linear-gradient(rgba(22, 26, 40, 0.8), rgba(22, 26, 40, 0.8)), url("../img/home/home-top.jpg");
+    height: 100vh;
     background-position: center center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+
+    &-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        text-align: center;
+
+        &-slogan {
+            font-size: 2rem;
+            color: $color-orange-light;
+            font-family: $font-oswald;
+            letter-spacing: 1rem;
+
+        }
+
+        & h1 {
+            font-size: 10rem;
+            font-family: $font-rufina;
+            color: $color-white;
+            margin-top: 4rem;
+            font-weight: 500;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            right: 0;
+            width: 0.2%;
+            height: 40%;
+            background: $color-orange-light;
+
+            z-index: -1;
+        }
+
+
+
+    }
+
+
+
+}
+
+.home-main {
+
+    height: 250rem;
+    padding-top: 15rem;
+    background-image: linear-gradient(rgba(255,255,255, 0.8), rgba(255,255,255, 0.8)), url("../img/home/background-mid.png");
+    &-order {
+        display: flex;
+        justify-content: center;
+
+        &-content {
+            display: flex;
+            padding-bottom: 5rem;
+
+            &-food {
+                transform: translateY(-20rem);
+
+
+
+                box-shadow: 4rem 3rem 6rem 0 rgba(0, 0, 0, .23);
+
+                &-card {
+                    margin-bottom:-2px;
+                    cursor: pointer;
+                   
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0%;
+                        left: 0%;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-image: linear-gradient(to top, rgba($color-dark-blue,0.9) 20%, rgba(255,0,0,0));
+        
+                    }
+                    &:hover:before {
+      
+                        background-image: linear-gradient(to top, rgba($color-dark-blue,0.9) 100%, rgba(255,0,0,0));
+                    }
+
+
+                    position: relative;
+
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                        
+                    }
+
+                    &-info {
+                        position: absolute;
+                        bottom: 1%;
+                        padding:2rem;
+                         width:100%;
+                        & h2 {
+                            font-size:3rem;
+                            color:$color-white;
+                            font-family: $font-rufina;
+                        }
+                        &-price {
+                            margin-top:1rem;
+                            font-size:2rem;
+                            display:flex;
+                            justify-content: space-between;
+                            font-family: $font-oswald;
+                            text-transform: uppercase;
+                            font-weight:700;
+                            letter-spacing: 3px;
+                            &-1 {
+                                color:$color-orange-light;
+                                
+                               
+                            }
+                            &-2 {
+                                color:$color-white;
+                            }
+                        }
+                    }
+
+                }
+            }
+            &-intro {
+                padding:2rem 0 0 10rem;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-item {
+                    & h1 {
+                        font-size:6rem;
+                        font-family: $font-rufina;
+                        color:$color-red-berry;
+                        margin-bottom:2rem;
+                    }
+                    & p {
+                        font-family: $font-muli;
+                        font-size:2rem;
+                        max-width:50rem;
+                        padding-left:6rem;
+                        color:$color-primary-dark;
+                    }
+                    & a {
+                       color:$color-red-berry;
+                       font-size:1.6rem;
+                       letter-spacing: 3px;
+                       font-family: $font-oswald;
+                       font-weight:200;
+                       padding:1rem 5rem;
+                       border:1px solid $color-red-berry;
+                       text-transform: uppercase;
+                       cursor: pointer;
+                       &:hover {
+                           color:$color-white;
+                           background:$color-red-berry;
+                       }
+                    }
+                }
+            }
+
+        }
+    }
 
 }

@@ -27,7 +27,7 @@
      position: fixed;
    
     width:100%;
-    z-index: 9999;
+    z-index: 999999;
     &-logo {
           width:15rem;
           padding:0 1rem;
@@ -53,6 +53,7 @@
         }
     }
     &-down {
+        z-index: 999998;
      display:none;
      flex-direction: column;
      justify-content: flex-end;

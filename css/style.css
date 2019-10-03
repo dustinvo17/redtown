@@ -5,7 +5,7 @@
   background: transparent;
   position: fixed;
   width: 100%;
-  z-index: 9999; }
+  z-index: 999999; }
   .navbar-logo {
     width: 15rem;
     padding: 0 1rem; }
@@ -35,6 +35,7 @@
       padding: 1rem;
       cursor: pointer; }
   .navbar-down {
+    z-index: 999998;
     display: none;
     flex-direction: column;
     justify-content: flex-end;
@@ -116,11 +117,123 @@
           font-weight: 400; }
 
 .home-top-content {
-  background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/home/home-top.jpg");
+  background-image: linear-gradient(rgba(22, 26, 40, 0.8), rgba(22, 26, 40, 0.8)), url("../img/home/home-top.jpg");
   height: 100vh;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+  .home-top-content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    text-align: center; }
+    .home-top-content-box-slogan {
+      font-size: 2rem;
+      color: #F6D478;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 1rem; }
+    .home-top-content-box h1 {
+      font-size: 10rem;
+      font-family: "Rufina", serif;
+      color: #ffff;
+      margin-top: 4rem;
+      font-weight: 500; }
+    .home-top-content-box::after {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      right: 0;
+      width: 0.2%;
+      height: 40%;
+      background: #F6D478;
+      z-index: -1; }
+
+.home-main {
+  height: 250rem;
+  padding-top: 15rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png"); }
+  .home-main-order {
+    display: flex;
+    justify-content: center; }
+    .home-main-order-content {
+      display: flex;
+      padding-bottom: 5rem; }
+      .home-main-order-content-food {
+        transform: translateY(-20rem);
+        box-shadow: 4rem 3rem 6rem 0 rgba(0, 0, 0, 0.23); }
+        .home-main-order-content-food-card {
+          margin-bottom: -2px;
+          cursor: pointer;
+          position: relative; }
+          .home-main-order-content-food-card:before {
+            content: "";
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top, rgba(44, 51, 70, 0.9) 20%, rgba(255, 0, 0, 0)); }
+          .home-main-order-content-food-card:hover:before {
+            background-image: linear-gradient(to top, rgba(44, 51, 70, 0.9) 100%, rgba(255, 0, 0, 0)); }
+          .home-main-order-content-food-card img {
+            height: 100%;
+            width: 100%; }
+          .home-main-order-content-food-card-info {
+            position: absolute;
+            bottom: 1%;
+            padding: 2rem;
+            width: 100%; }
+            .home-main-order-content-food-card-info h2 {
+              font-size: 3rem;
+              color: #ffff;
+              font-family: "Rufina", serif; }
+            .home-main-order-content-food-card-info-price {
+              margin-top: 1rem;
+              font-size: 2rem;
+              display: flex;
+              justify-content: space-between;
+              font-family: "Oswald", sans-serif;
+              text-transform: uppercase;
+              font-weight: 700;
+              letter-spacing: 3px; }
+              .home-main-order-content-food-card-info-price-1 {
+                color: #F6D478; }
+              .home-main-order-content-food-card-info-price-2 {
+                color: #ffff; }
+      .home-main-order-content-intro {
+        padding: 2rem 0 0 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .home-main-order-content-intro-item h1 {
+          font-size: 6rem;
+          font-family: "Rufina", serif;
+          color: #6b0d2b;
+          margin-bottom: 2rem; }
+        .home-main-order-content-intro-item p {
+          font-family: "Muli", sans-serif;
+          font-size: 2rem;
+          max-width: 50rem;
+          padding-left: 6rem;
+          color: #161A28; }
+        .home-main-order-content-intro-item a {
+          color: #6b0d2b;
+          font-size: 1.6rem;
+          letter-spacing: 3px;
+          font-family: "Oswald", sans-serif;
+          font-weight: 200;
+          padding: 1rem 5rem;
+          border: 1px solid #6b0d2b;
+          text-transform: uppercase;
+          cursor: pointer; }
+          .home-main-order-content-intro-item a:hover {
+            color: #ffff;
+            background: #6b0d2b; }
 
 *, body {
   margin: 0;
