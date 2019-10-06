@@ -1,7 +1,7 @@
 // font-family: 'Muli', sans-serif;
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Rufina', serif;
-@import './var.scss';
+@import '../var.scss';
 
 
 @mixin buttonBook() {
@@ -92,6 +92,10 @@
             &-item {
                 
                 list-style: none;
+                & a {
+                    text-decoration: none;
+                    color:$color-white;
+                }
                 & a:hover {
                     cursor: pointer;
                     color:$color-orange-light;

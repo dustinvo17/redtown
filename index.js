@@ -2,9 +2,11 @@ window.onload = init
 
 function init() {
     let up = false
+    setClock()
 
-     // slide up down event
-    $("#navbar").load("nav-bar.html", function() {
+    // load reusable components 
+    $('#footer').load('footer.html')
+    $("#navbar").load("nav-bar.html", function () {
         $('.navbar-button-hamburger-img').on('click', function () {
 
             const navDown = $('.navbar-down')
@@ -17,7 +19,7 @@ function init() {
             } else {
 
                 navDown.slideDown()
-                    navDown.css('display','flex')
+                navDown.css('display', 'flex')
                 bookBtn.fadeOut()
                 up = true
             }
@@ -26,7 +28,9 @@ function init() {
     });
 
 
-   
+
+    setInterval(setClock, 1000)
+
 
     //    nav bar scroll event
     $(window).scroll(function () {
@@ -43,4 +47,24 @@ function init() {
         }
 
     })
+
+    function setClock() {
+
+        const hourHand = $('.hand-hour')
+        const minuteHand = $('.hand-minute')
+        const secondHand = $('.hand-second')
+
+        function setRotation(elem, rotation) {
+            elem.css('--rotation', rotation * 360)
+        }
+        const currentDate = new Date()
+        const secondsRatio = currentDate.getSeconds() / 60
+        const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+        const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
+        setRotation(secondHand, secondsRatio)
+        setRotation(minuteHand, minutesRatio)
+        setRotation(hourHand, hoursRatio)
+
+
+    }
 }

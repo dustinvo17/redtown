@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli|Oswald|Rufina&display=swap');
-@import "./navbar";
+@import "./navbar/navbar";
 @import "./home/home";
+@import "./footer/footer";
 $color-orange-light:#F6D478;
 
 
@@ -11,7 +12,4 @@ $color-orange-light:#F6D478;
     padding:0;
     font-size:62.5%;
     box-sizing: border-box;
-}
-body {
-    height:500rem;
 }
