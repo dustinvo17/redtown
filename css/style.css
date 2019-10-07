@@ -12,12 +12,14 @@
     .navbar-logo-img {
       width: 100%;
       height: 10rem;
-      object-fit: cover; }
+      object-fit: cover;
+      box-shadow: none; }
   .navbar-button {
     display: flex;
     justify-content: flex-end;
     padding: 3rem; }
     .navbar-button-book {
+      --colorBtn:#F6D478;
       font-size: 1.3rem;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
@@ -25,11 +27,11 @@
       letter-spacing: 2px;
       margin-right: 5rem;
       padding: 1.2rem 7rem;
-      border: 1px solid #F6D478;
-      color: #F6D478;
+      border: 1px solid var(--colorBtn);
+      color: var(--colorBtn);
       cursor: pointer; }
       .navbar-button-book:hover {
-        background: #F6D478;
+        background: var(--colorBtn);
         color: #ffff; }
     .navbar-button-hamburger {
       padding: 1rem;
@@ -217,7 +219,8 @@ h1 {
         padding: 2rem 0 0 10rem; }
         .home-main-order-content-intro-item p {
           font-family: "Muli", sans-serif;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
+          font-weight: 400;
           max-width: 50rem;
           padding-left: 6rem;
           color: #161A28;
@@ -506,6 +509,103 @@ h1 {
           border: none; }
         .footer-grid-item div a:not(:last-child) {
           margin-right: 3rem; }
+
+.restaurant {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
+  padding: 20rem 0; }
+  .restaurant p {
+    font-family: "Muli", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 50rem;
+    padding-left: 6rem;
+    color: #161A28;
+    margin: 2rem 0 6rem 0;
+    line-height: 1.5; }
+  .restaurant-story {
+    width: 60%;
+    margin: 0 auto; }
+    .restaurant-story h1 {
+      position: relative;
+      z-index: 9;
+      text-align: center; }
+    .restaurant-story-box {
+      margin-top: 12rem;
+      height: 40rem;
+      display: flex;
+      justify-content: space-around;
+      position: relative; }
+      .restaurant-story-box > * {
+        z-index: 9; }
+      .restaurant-story-box:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        background: #F5F6FA;
+        transform: translateY(-50%); }
+      .restaurant-story-box h1 {
+        padding-top: 5rem; }
+      .restaurant-story-box-arrows {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        font-size: 1rem;
+        transform: translateY(50%); }
+        .restaurant-story-box-arrows .fa {
+          padding: 2rem;
+          background: #161A28;
+          color: #ffff;
+          margin-right: 1rem;
+          cursor: pointer; }
+          .restaurant-story-box-arrows .fa:hover {
+            filter: brightness(250%); }
+      .restaurant-story-box-img {
+        padding: 2rem;
+        margin-right: 5rem;
+        transform: translateY(-20%);
+        position: relative; }
+        .restaurant-story-box-img .active {
+          opacity: 1; }
+        .restaurant-story-box-img img {
+          height: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity .4s ease-in; }
+    .restaurant-story-history {
+      padding: 0 4rem 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .restaurant-story-history-img {
+        z-index: 10;
+        transform: translateY(-30%);
+        outline: none; }
+  .restaurant .restaurant-mid-image {
+    margin: 4rem 0; }
+    .restaurant .restaurant-mid-image img {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+      max-height: 57rem; }
+
+.restaurant-main {
+  width: 60%;
+  margin: 0 auto; }
+  .restaurant-main-text {
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: space-between; }
+  .restaurant-main-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem; }
+    .restaurant-main-img img {
+      box-shadow: 1rem 2rem 2rem 0 rgba(0, 0, 0, 0.23); }
 
 *, body {
   margin: 0;
