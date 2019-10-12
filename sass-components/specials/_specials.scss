@@ -1,0 +1,55 @@
+@import '../var.scss';
+
+.specials-page {
+    @include pageStyle();
+    padding-bottom: 0 !important;
+
+}
+
+.specials-top {
+    @include pageName();
+
+    & h1 {
+        padding: 1rem 0;
+        border-bottom: 2px solid;
+    }
+}
+
+.specials {
+    background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/specials/special-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include foodStyle(-5rem);
+
+    @include infoStyle();
+
+    &-info {
+
+        & div {
+            flex-direction: column;
+        }
+
+
+        &-date,
+        &-price {
+            font-size: 1.2rem;
+            color: $color-orange-light;
+            font-family: $font-oswald;
+        }
+
+        &-slogan {
+            font-size: 1.6rem;
+            padding: 5rem;
+            line-height: 2;
+            font-family: $font-muli;
+            ;
+        }
+
+        &-price {
+
+            text-align: end;
+        }
+    }
+}

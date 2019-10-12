@@ -467,7 +467,6 @@ h1 {
 .footer {
   background: #161A28;
   position: relative;
-  margin-top: 5rem;
   padding: 5rem 2rem;
   display: flex;
   color: #ffff;
@@ -512,7 +511,8 @@ h1 {
 
 .restaurant {
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
-  padding: 20rem 0; }
+  padding: 20rem 0 5rem 0;
+  padding-bottom: 15rem !important; }
   .restaurant p {
     font-family: "Muli", sans-serif;
     font-size: 1.6rem;
@@ -606,6 +606,285 @@ h1 {
     padding: 0 2rem; }
     .restaurant-main-img img {
       box-shadow: 1rem 2rem 2rem 0 rgba(0, 0, 0, 0.23); }
+
+.menu-page {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
+  padding: 20rem 0 5rem 0; }
+
+.menu-top {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  margin: 0 auto; }
+  .menu-top p {
+    font-family: "Muli", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 50rem;
+    padding-left: 6rem;
+    color: #161A28;
+    margin: 2rem 0 6rem 0;
+    line-height: 1.5;
+    margin-top: 5rem; }
+
+.menu-food-1 {
+  background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/menu/menu-bg-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 0;
+  align-items: center; }
+  .menu-food-1 img {
+    transform: translate(-5rem, -30%); }
+  .menu-food-1-info {
+    z-index: 9;
+    color: white;
+    background: linear-gradient(70deg, #161a28, #2e3c5c);
+    position: relative;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
+    .menu-food-1-info h1 {
+      color: #ffff;
+      margin-bottom: 2rem;
+      transform: translateX(-10rem); }
+    .menu-food-1-info-item {
+      z-index: 9;
+      padding: 2rem; }
+      .menu-food-1-info-item h3 {
+        font-size: 2.2rem;
+        font-family: "Rufina", serif;
+        margin-bottom: 1rem; }
+      .menu-food-1-info-item div {
+        display: flex;
+        justify-content: space-between; }
+      .menu-food-1-info-item p,
+      .menu-food-1-info-item span {
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+      .menu-food-1-info-item p {
+        color: #F6D478; }
+
+.menu-food-2 {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 0;
+  align-items: center; }
+  .menu-food-2 img {
+    transform: translate(5rem, -30%); }
+  .menu-food-2-info {
+    z-index: 9;
+    color: white;
+    background: linear-gradient(70deg, #161a28, #2e3c5c);
+    position: relative;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
+    .menu-food-2-info h1 {
+      color: #ffff;
+      margin-bottom: 2rem;
+      transform: translateX(-10rem); }
+    .menu-food-2-info-item {
+      z-index: 9;
+      padding: 2rem; }
+      .menu-food-2-info-item h3 {
+        font-size: 2.2rem;
+        font-family: "Rufina", serif;
+        margin-bottom: 1rem; }
+      .menu-food-2-info-item div {
+        display: flex;
+        justify-content: space-between; }
+      .menu-food-2-info-item p,
+      .menu-food-2-info-item span {
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+      .menu-food-2-info-item p {
+        color: #F6D478; }
+
+.menu-food-3 {
+  background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/menu/menu-bg-3.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 0;
+  align-items: center; }
+  .menu-food-3 img {
+    transform: translate(-5rem, -30%); }
+  .menu-food-3-info {
+    z-index: 9;
+    color: white;
+    background: linear-gradient(70deg, #161a28, #2e3c5c);
+    position: relative;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
+    .menu-food-3-info h1 {
+      color: #ffff;
+      margin-bottom: 2rem;
+      transform: translateX(-10rem); }
+    .menu-food-3-info-item {
+      z-index: 9;
+      padding: 2rem; }
+      .menu-food-3-info-item h3 {
+        font-size: 2.2rem;
+        font-family: "Rufina", serif;
+        margin-bottom: 1rem; }
+      .menu-food-3-info-item div {
+        display: flex;
+        justify-content: space-between; }
+      .menu-food-3-info-item p,
+      .menu-food-3-info-item span {
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+      .menu-food-3-info-item p {
+        color: #F6D478; }
+
+.menu-food-4 {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 0;
+  align-items: center; }
+  .menu-food-4 img {
+    transform: translate(5rem, -30%); }
+  .menu-food-4-info {
+    z-index: 9;
+    color: white;
+    background: linear-gradient(70deg, #161a28, #2e3c5c);
+    position: relative;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
+    .menu-food-4-info h1 {
+      color: #ffff;
+      margin-bottom: 2rem;
+      transform: translateX(-10rem); }
+    .menu-food-4-info-item {
+      z-index: 9;
+      padding: 2rem; }
+      .menu-food-4-info-item h3 {
+        font-size: 2.2rem;
+        font-family: "Rufina", serif;
+        margin-bottom: 1rem; }
+      .menu-food-4-info-item div {
+        display: flex;
+        justify-content: space-between; }
+      .menu-food-4-info-item p,
+      .menu-food-4-info-item span {
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+      .menu-food-4-info-item p {
+        color: #F6D478; }
+  .menu-food-4 p {
+    font-size: 1.6rem;
+    padding: 5rem;
+    line-height: 2;
+    font-family: "Muli", sans-serif; }
+
+.specials-page {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
+  padding: 20rem 0 5rem 0;
+  padding-bottom: 0 !important; }
+
+.specials-top {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  margin: 0 auto; }
+  .specials-top h1 {
+    padding: 1rem 0;
+    border-bottom: 2px solid; }
+
+.specials {
+  background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/specials/special-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 0;
+  align-items: center; }
+  .specials img {
+    transform: translate(-5rem, -30%); }
+  .specials-info {
+    z-index: 9;
+    color: white;
+    background: linear-gradient(70deg, #161a28, #2e3c5c);
+    position: relative;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
+    .specials-info h1 {
+      color: #ffff;
+      margin-bottom: 2rem;
+      transform: translateX(-10rem); }
+    .specials-info-item {
+      z-index: 9;
+      padding: 2rem; }
+      .specials-info-item h3 {
+        font-size: 2.2rem;
+        font-family: "Rufina", serif;
+        margin-bottom: 1rem; }
+      .specials-info-item div {
+        display: flex;
+        justify-content: space-between; }
+      .specials-info-item p,
+      .specials-info-item span {
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+      .specials-info-item p {
+        color: #F6D478; }
+  .specials-info div {
+    flex-direction: column; }
+  .specials-info-date, .specials-info-price {
+    font-size: 1.2rem;
+    color: #F6D478;
+    font-family: "Oswald", sans-serif; }
+  .specials-info-slogan {
+    font-size: 1.6rem;
+    padding: 5rem;
+    line-height: 2;
+    font-family: "Muli", sans-serif; }
+  .specials-info-price {
+    text-align: end; }
 
 *, body {
   margin: 0;

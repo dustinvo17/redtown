@@ -1,4 +1,5 @@
 $color-orange-light:#F6D478;
+
 $color-primary-dark:#161A28;
 $color-gray-light:#9B9B9B;
 $color-white:#ffff;
@@ -7,12 +8,133 @@ $color-second-blue:#1F2639;
 $color-red-berry:#6b0d2b;
 $color-gray:#F5F6FA;
 
-
+$color-background-menu:linear-gradient(70deg,#161a28,#2e3c5c);
 
 // font-family: 'Muli', sans-serif;
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Rufina', serif;
 
-$font-rufina :'Rufina', serif;
-$font-muli:'Muli', sans-serif;
-$font-oswald:'Oswald', sans-serif;
+$font-rufina :'Rufina',
+serif;
+$font-muli:'Muli',
+sans-serif;
+$font-oswald:'Oswald',
+sans-serif;
+
+@mixin pStyle($color) {
+    font-family: $font-muli;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 50rem;
+    padding-left: 6rem;
+    color: $color;
+    margin: 2rem 0 6rem 0;
+    line-height: 1.5;
+}
+
+@mixin btnArrow($color) {
+    color: $color;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: $font-oswald;
+
+    &:hover {
+
+        & .fa {
+            transform: translateX(1rem);
+        }
+
+    }
+
+    & .fa {
+        transition: transform 0.2s ease;
+
+    }
+}
+@mixin pageStyle(){
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
+        padding: 20rem 0 5rem 0;
+}
+@mixin pageName(){
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+
+
+
+    margin: 0 auto;
+}
+// style menu style and specials item 
+@mixin infoStyle() {
+    &-info {
+        z-index: 9;
+
+        color: white;
+        background: $color-background-menu;
+
+        position: relative;
+
+
+        padding: 5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+
+        & h1 {
+            color: $color-white;
+            margin-bottom: 2rem;
+            transform: translateX(-10rem);
+
+        }
+
+        &-item {
+
+            z-index: 9;
+            padding: 2rem;
+
+            & h3 {
+                font-size: 2.2rem;
+                font-family: $font-rufina;
+                margin-bottom: 1rem;
+            }
+
+            & div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            & p,
+            span {
+                letter-spacing: 3px;
+                font-weight: 400;
+                font-size: 1.2rem;
+                font-family: $font-oswald;
+                text-transform: uppercase;
+
+            }
+
+            & p {
+                color: $color-orange-light;
+
+            }
+        }
+    }
+}
+
+@mixin foodStyle($Xtranslate) {
+     margin-top:15rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10rem 0;
+
+    & img {
+        transform: translate($Xtranslate, -30%);
+    }
+
+    align-items: center;
+}

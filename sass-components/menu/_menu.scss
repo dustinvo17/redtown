@@ -1,0 +1,67 @@
+@import '../var';
+
+
+
+
+.menu-page {
+    @include pageStyle();
+   
+}
+
+.menu-top {
+
+    @include pageName();
+
+    & p {
+        @include pStyle($color-primary-dark);
+        margin-top: 5rem;
+    }
+
+}
+
+.menu-food {
+    &-1 {
+        background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/menu/menu-bg-1.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include foodStyle(-5rem);
+
+
+        @include infoStyle();
+    }
+
+    &-2 {
+
+
+        @include foodStyle(5rem);
+
+
+        @include infoStyle();
+    }
+        &-3 {
+        background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/menu/menu-bg-3.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+ 
+        @include foodStyle(-5rem);
+
+
+        @include infoStyle();
+    }
+    &-4 {
+       
+         @include foodStyle(5rem);
+         
+        @include infoStyle();
+        & p {
+            font-size:1.6rem;
+            padding:5rem;
+            line-height:2;
+            font-family: $font-muli;;
+        }
+      
+    }
+}
