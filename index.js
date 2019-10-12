@@ -2,9 +2,27 @@ window.onload = init
 
 function init() {
     let up = false
-    setClock()
 
 
+
+
+    $('#time-component').load('time-component.html', function () {
+        setClock()
+        let inHomepage = !window.location.href.includes('.html')
+
+
+        $('#form-type').load(`${inHomepage ? 'newsletter.html':'form.html'}`)
+        $('.form-name').text(`${inHomepage ? 'Sign up to our newsletter' : 'Contact'}`)
+
+
+
+
+
+
+    })
+    $('.home-main-order-content-food-card').on('click',function(){
+        window.location = 'menu.html'
+    })
 
 
     // load reusable components 
@@ -128,37 +146,36 @@ function init() {
     }
 
     // restaurant page function
-    function imageSlider(){
+    function imageSlider() {
         const left = $('.fa-chevron-left')
-     
+
         const right = $('.fa-chevron-right')
         let currentIndex = 0
         const images = $('.restaurant-story-box-img img')
         let currentImage = images[0]
-        function slider(left){
-             currentImage.classList.remove('active')
-            if(currentIndex === (left ? 0 :2)){
-                currentIndex = (left ? 2:0)
-            }
-            else {
-                if(left){
+
+        function slider(left) {
+            currentImage.classList.remove('active')
+            if (currentIndex === (left ? 0 : 2)) {
+                currentIndex = (left ? 2 : 0)
+            } else {
+                if (left) {
                     currentIndex--
-                }
-                else {
+                } else {
                     currentIndex++
                 }
-                
+
             }
             currentImage = images[currentIndex]
-           
+
             currentImage.classList.add('active')
         }
-        left.on('click',function(){
+        left.on('click', function () {
             slider(true)
-         
-            
+
+
         })
-        right.on('click',function(){
+        right.on('click', function () {
             slider(false)
         })
     }

@@ -1,0 +1,33 @@
+@import '../var';
+
+.contact-page {
+    @include pageStyle();
+
+}
+.contact-top {
+    @include pageName()
+}
+.contact-main {
+
+    @include backgroundPage(url("../img/contact/contact-bg-top.jpg"));
+   
+    @include boxImgStyle(-5rem);
+
+    @include infoStyle();
+  
+    &-top{
+        & p{
+              font-size: 1.6rem;
+            padding:1rem 5rem;
+            line-height: 2;
+            font-family: $font-muli;
+            ;
+        }
+        &-mail {
+        
+            font-weight:900;
+         
+        }
+           
+    }
+}

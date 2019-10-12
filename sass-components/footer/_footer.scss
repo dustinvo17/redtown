@@ -11,7 +11,7 @@
     color:$color-white;
    font-family: $font-muli;
     &-book-button {
-       
+        
         background: linear-gradient(70deg,#401429,#161a28);
         box-shadow: 40px 30px 60px 0 rgba(0,0,0,.23);
         padding:6rem;
@@ -22,6 +22,7 @@
         transform: translate(-50%, -50%);
         & a {
             margin:0 auto;
+            text-decoration: none;
         }
 
     }
@@ -47,7 +48,6 @@
               
                  & a {
                 font-size:inherit;
-                text-decoration: none;
                 font-family: $font-rufina;
                 font-weight: 700;
                 border-bottom:1px solid $color-white;

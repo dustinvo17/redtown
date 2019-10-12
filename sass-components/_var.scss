@@ -125,7 +125,7 @@ sans-serif;
     }
 }
 
-@mixin foodStyle($Xtranslate) {
+@mixin boxImgStyle($Xtranslate) {
      margin-top:15rem;
     display: flex;
     justify-content: center;
@@ -137,4 +137,11 @@ sans-serif;
     }
 
     align-items: center;
+}
+
+@mixin backgroundPage($url){
+        background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)),$url;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
 }

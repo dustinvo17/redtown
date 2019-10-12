@@ -16,12 +16,9 @@
 }
 
 .specials {
-    background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/specials/special-bg.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include backgroundPage(url("../img/specials/special-bg.jpg"));
 
-    @include foodStyle(-5rem);
+    @include boxImgStyle(-5rem);
 
     @include infoStyle();
 

@@ -1,0 +1,21 @@
+@import '../var.scss';
+
+.book-page {
+    @include pageStyle();
+
+}
+
+.book-top {
+    @include pageName();
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50vh;
+
+    & p {
+        @include pStyle($color-gray-light);
+        line-height: 2;
+
+    }
+
+}

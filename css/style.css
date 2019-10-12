@@ -317,19 +317,6 @@ h1 {
           font-family: "Rufina", serif;
           color: #6b0d2b;
           font-weight: 700; }
-        .home-news-item-card-content .arrow-btn {
-          align-self: flex-end;
-          color: #9B9B9B;
-          font-size: 1.5rem;
-          font-weight: 400;
-          letter-spacing: 3px;
-          padding: 1rem;
-          cursor: pointer;
-          font-family: "Oswald", sans-serif; }
-          .home-news-item-card-content .arrow-btn:hover .fa {
-            transform: translateX(1rem); }
-          .home-news-item-card-content .arrow-btn .fa {
-            transition: transform 0.2s ease; }
 
 .home-time {
   padding: 8rem 0; }
@@ -439,7 +426,7 @@ h1 {
 
 .news-letter {
   background: #F5F6FA;
-  margin-top: 10rem; }
+  margin: 10rem 0; }
   .news-letter-box {
     padding: 10rem 0;
     display: flex;
@@ -449,12 +436,14 @@ h1 {
     .news-letter-box-content {
       margin-top: 5rem; }
       .news-letter-box-content input {
+        font-family: "Muli", sans-serif;
         background: transparent;
+        border: none;
         width: 30rem;
         padding: 1.3rem 0;
-        border: none;
+        font-size: 1.6rem;
         border-bottom: 1px solid #9B9B9B;
-        margin-right: 3rem; }
+        margin-right: 2rem; }
         .news-letter-box-content input::placeholder {
           font-size: 1.5rem; }
         .news-letter-box-content input:focus {
@@ -463,6 +452,33 @@ h1 {
         background: #6b0d2b;
         color: #ffff;
         border: none; }
+
+.form-box {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Muli", sans-serif; }
+  .form-box input, .form-box textarea {
+    font-family: "Muli", sans-serif;
+    background: transparent;
+    border: none;
+    width: 50rem;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #9B9B9B; }
+    .form-box input::placeholder, .form-box textarea::placeholder {
+      font-size: 1.5rem; }
+    .form-box input:focus, .form-box textarea:focus {
+      outline: none; }
+  .form-box textarea {
+    height: 20rem;
+    margin-bottom: 4rem; }
+  .form-box .navbar-button-book {
+    align-self: flex-end;
+    background: #6b0d2b;
+    color: #ffff;
+    border: none; }
 
 .footer {
   background: #161A28;
@@ -481,7 +497,8 @@ h1 {
     top: 0;
     transform: translate(-50%, -50%); }
     .footer-book-button a {
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-decoration: none; }
   .footer-grid {
     width: 100%;
     display: grid;
@@ -499,7 +516,6 @@ h1 {
         margin-right: 3rem; }
       .footer-grid-item div a {
         font-size: inherit;
-        text-decoration: none;
         font-family: "Rufina", serif;
         font-weight: 700;
         border-bottom: 1px solid #ffff;
@@ -886,8 +902,99 @@ h1 {
   .specials-info-price {
     text-align: end; }
 
+.contact-page {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
+  padding: 20rem 0 5rem 0; }
+
+.contact-top {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  margin: 0 auto; }
+
+.contact-main {
+  background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/contact/contact-bg-top.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 0;
+  align-items: center; }
+  .contact-main img {
+    transform: translate(-5rem, -30%); }
+  .contact-main-info {
+    z-index: 9;
+    color: white;
+    background: linear-gradient(70deg, #161a28, #2e3c5c);
+    position: relative;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
+    .contact-main-info h1 {
+      color: #ffff;
+      margin-bottom: 2rem;
+      transform: translateX(-10rem); }
+    .contact-main-info-item {
+      z-index: 9;
+      padding: 2rem; }
+      .contact-main-info-item h3 {
+        font-size: 2.2rem;
+        font-family: "Rufina", serif;
+        margin-bottom: 1rem; }
+      .contact-main-info-item div {
+        display: flex;
+        justify-content: space-between; }
+      .contact-main-info-item p,
+      .contact-main-info-item span {
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; }
+      .contact-main-info-item p {
+        color: #F6D478; }
+  .contact-main-top p {
+    font-size: 1.6rem;
+    padding: 1rem 5rem;
+    line-height: 2;
+    font-family: "Muli", sans-serif; }
+  .contact-main-top-mail {
+    font-weight: 900; }
+
+.book-page {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
+  padding: 20rem 0 5rem 0; }
+
+.book-top {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  margin: 0 auto;
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh; }
+  .book-top p {
+    font-family: "Muli", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 50rem;
+    padding-left: 6rem;
+    color: #9B9B9B;
+    margin: 2rem 0 6rem 0;
+    line-height: 1.5;
+    line-height: 2; }
+
 *, body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
   box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
