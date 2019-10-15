@@ -3,63 +3,111 @@
 
 
 .footer {
-    background:$color-primary-dark;
+    background: $color-primary-dark;
     position: relative;
-    
-    padding:5rem 2rem;
-    display: flex;
-    color:$color-white;
-   font-family: $font-muli;
+
+    padding: 5rem 2rem;
+
+    color: $color-white;
+    font-family: $font-muli;
+
+    @media only screen and (max-width:900px) {
+
+        display: flex;
+        align-items: flex-end;
+        padding: 10rem 1rem 5rem 1rem;
+    }
+
     &-book-button {
-        
-        background: linear-gradient(70deg,#401429,#161a28);
-        box-shadow: 40px 30px 60px 0 rgba(0,0,0,.23);
-        padding:6rem;
+
+        background: linear-gradient(70deg, #401429, #161a28);
+        box-shadow: 40px 30px 60px 0 rgba(0, 0, 0, .23);
+        padding: 6rem;
         z-index: 99;
-        position:absolute;
-        left:50%;
-        top:0;
+        position: absolute;
+        left: 50%;
+        top: 0;
         transform: translate(-50%, -50%);
+
         & a {
-            margin:0 auto;
+            margin: 0 auto;
             text-decoration: none;
         }
 
     }
+
     &-grid {
- 
-        width:100%;
-        display:grid;
-        grid-template-columns: repeat(3,33%);
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
         align-items: flex-end;
         align-items: center;
+
+        @media only screen and (max-width:900px) {
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
         &-item {
-            font-size:3rem;
-            display:flex;
+            font-size: 3rem;
+            display: flex;
             align-items: center;
             justify-content: flex-end;
+
+            @media only screen and (max-width:1150px) {
+
+                font-size: 2.5rem;
+
+            }
+
+            @media only screen and (max-width:900px) {
+
+                font-size: 2rem;
+
+            }
+
             & p {
                 margin: 0 auto;
-            }
-            & img {
-                margin-right:3rem;
-            }
-            & div {
-              
-                 & a {
-                font-size:inherit;
-                font-family: $font-rufina;
-                font-weight: 700;
-                border-bottom:1px solid $color-white;
-                cursor: pointer;
-               &:hover {
-                   border:none;
-               }
-                &:not(:last-child){
-                    margin-right:3rem;
+
+                @media only screen and (max-width:900px) {
+
+                    margin: 2rem auto;
+
                 }
             }
-           
+
+            & img {
+                margin-right: 3rem;
+
+                @media only screen and (max-width:900px) {
+
+                    width: 10rem;
+
+                }
+            }
+
+
+            & div {
+
+                & a {
+                    font-size: inherit;
+                    font-family: $font-rufina;
+                    font-weight: 700;
+                    border-bottom: 1px solid $color-white;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: none;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 3rem;
+                    }
+                }
+
             }
         }
 
