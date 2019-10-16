@@ -20,7 +20,7 @@ function init() {
 
 
     })
-    $('.home-main-order-content-food-card').on('click',function(){
+    $('.home-main-order-content-food-card').on('click', function () {
         window.location = 'menu.html'
     })
 

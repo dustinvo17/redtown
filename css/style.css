@@ -23,6 +23,7 @@
     justify-content: flex-end;
     padding: 3rem; }
     .navbar-button-book {
+      --colorBtn:#F6D478;
       font-size: 1.3rem;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
@@ -30,11 +31,11 @@
       letter-spacing: 2px;
       margin-right: 5rem;
       padding: 1.2rem 7rem;
-      border: 1px solid #F6D478;
-      color: #F6D478;
+      border: 1px solid var(--colorBtn);
+      color: var(--colorBtn);
       cursor: pointer; }
       .navbar-button-book:hover {
-        background: #F6D478;
+        background: var(--colorBtn);
         color: #ffff; }
       @media only screen and (max-width: 450px) {
         .navbar-button-book {
@@ -858,8 +859,26 @@ h1 {
   position: relative;
   padding: 10rem 0;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .menu-food-1 {
+      background: none !important; } }
+  @media only screen and (max-width: 900px) {
+    .menu-food-1 {
+      margin-top: 0;
+      padding: 5rem 0; } }
   .menu-food-1 img {
     transform: translate(-5rem, -30%); }
+    @media only screen and (max-width: 900px) {
+      .menu-food-1 img {
+        transform: translate(0, 0); } }
+  @media only screen and (max-width: 900px) {
+    .menu-food-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 450px) {
+    .menu-food-1-img img {
+      width: 100vw; } }
   .menu-food-1-info {
     z-index: 9;
     color: white;
@@ -870,10 +889,17 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 40%; }
+    @media only screen and (max-width: 900px) {
+      .menu-food-1-info {
+        width: 100%; } }
     .menu-food-1-info h1 {
       color: #ffff;
       margin-bottom: 2rem;
       transform: translateX(-10rem); }
+      @media only screen and (max-width: 900px) {
+        .menu-food-1-info h1 {
+          transform: translate(0);
+          text-align: center; } }
     .menu-food-1-info-item {
       z-index: 9;
       padding: 2rem; }
@@ -893,6 +919,8 @@ h1 {
         text-transform: uppercase; }
       .menu-food-1-info-item p {
         color: #F6D478; }
+  .menu-food-1-info {
+    order: 2; }
 
 .menu-food-2 {
   margin-top: 15rem;
@@ -901,8 +929,23 @@ h1 {
   position: relative;
   padding: 10rem 0;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .menu-food-2 {
+      margin-top: 0;
+      padding: 5rem 0; } }
   .menu-food-2 img {
     transform: translate(5rem, -30%); }
+    @media only screen and (max-width: 900px) {
+      .menu-food-2 img {
+        transform: translate(0, 0); } }
+  @media only screen and (max-width: 900px) {
+    .menu-food-2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 450px) {
+    .menu-food-2-img img {
+      width: 100vw; } }
   .menu-food-2-info {
     z-index: 9;
     color: white;
@@ -913,10 +956,17 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 40%; }
+    @media only screen and (max-width: 900px) {
+      .menu-food-2-info {
+        width: 100%; } }
     .menu-food-2-info h1 {
       color: #ffff;
       margin-bottom: 2rem;
       transform: translateX(-10rem); }
+      @media only screen and (max-width: 900px) {
+        .menu-food-2-info h1 {
+          transform: translate(0);
+          text-align: center; } }
     .menu-food-2-info-item {
       z-index: 9;
       padding: 2rem; }
@@ -948,8 +998,26 @@ h1 {
   position: relative;
   padding: 10rem 0;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .menu-food-3 {
+      background: none !important; } }
+  @media only screen and (max-width: 900px) {
+    .menu-food-3 {
+      margin-top: 0;
+      padding: 5rem 0; } }
   .menu-food-3 img {
     transform: translate(-5rem, -30%); }
+    @media only screen and (max-width: 900px) {
+      .menu-food-3 img {
+        transform: translate(0, 0); } }
+  @media only screen and (max-width: 900px) {
+    .menu-food-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 450px) {
+    .menu-food-3-img img {
+      width: 100vw; } }
   .menu-food-3-info {
     z-index: 9;
     color: white;
@@ -960,10 +1028,17 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 40%; }
+    @media only screen and (max-width: 900px) {
+      .menu-food-3-info {
+        width: 100%; } }
     .menu-food-3-info h1 {
       color: #ffff;
       margin-bottom: 2rem;
       transform: translateX(-10rem); }
+      @media only screen and (max-width: 900px) {
+        .menu-food-3-info h1 {
+          transform: translate(0);
+          text-align: center; } }
     .menu-food-3-info-item {
       z-index: 9;
       padding: 2rem; }
@@ -983,6 +1058,8 @@ h1 {
         text-transform: uppercase; }
       .menu-food-3-info-item p {
         color: #F6D478; }
+  .menu-food-3-info {
+    order: 2; }
 
 .menu-food-4 {
   margin-top: 15rem;
@@ -991,8 +1068,23 @@ h1 {
   position: relative;
   padding: 10rem 0;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .menu-food-4 {
+      margin-top: 0;
+      padding: 5rem 0; } }
   .menu-food-4 img {
     transform: translate(5rem, -30%); }
+    @media only screen and (max-width: 900px) {
+      .menu-food-4 img {
+        transform: translate(0, 0); } }
+  @media only screen and (max-width: 900px) {
+    .menu-food-4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 450px) {
+    .menu-food-4-img img {
+      width: 100vw; } }
   .menu-food-4-info {
     z-index: 9;
     color: white;
@@ -1003,10 +1095,17 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 40%; }
+    @media only screen and (max-width: 900px) {
+      .menu-food-4-info {
+        width: 100%; } }
     .menu-food-4-info h1 {
       color: #ffff;
       margin-bottom: 2rem;
       transform: translateX(-10rem); }
+      @media only screen and (max-width: 900px) {
+        .menu-food-4-info h1 {
+          transform: translate(0);
+          text-align: center; } }
     .menu-food-4-info-item {
       z-index: 9;
       padding: 2rem; }
@@ -1057,8 +1156,26 @@ h1 {
   position: relative;
   padding: 10rem 0;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .specials {
+      background: none !important; } }
+  @media only screen and (max-width: 900px) {
+    .specials {
+      margin-top: 0;
+      padding: 5rem 0; } }
   .specials img {
     transform: translate(-5rem, -30%); }
+    @media only screen and (max-width: 900px) {
+      .specials img {
+        transform: translate(0, 0); } }
+  @media only screen and (max-width: 900px) {
+    .specials {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 450px) {
+    .specials-img img {
+      width: 100vw; } }
   .specials-info {
     z-index: 9;
     color: white;
@@ -1069,10 +1186,17 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 40%; }
+    @media only screen and (max-width: 900px) {
+      .specials-info {
+        width: 100%; } }
     .specials-info h1 {
       color: #ffff;
       margin-bottom: 2rem;
       transform: translateX(-10rem); }
+      @media only screen and (max-width: 900px) {
+        .specials-info h1 {
+          transform: translate(0);
+          text-align: center; } }
     .specials-info-item {
       z-index: 9;
       padding: 2rem; }
@@ -1127,8 +1251,26 @@ h1 {
   position: relative;
   padding: 10rem 0;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .contact-main {
+      background: none !important; } }
+  @media only screen and (max-width: 900px) {
+    .contact-main {
+      margin-top: 0;
+      padding: 5rem 0; } }
   .contact-main img {
     transform: translate(-5rem, -30%); }
+    @media only screen and (max-width: 900px) {
+      .contact-main img {
+        transform: translate(0, 0); } }
+  @media only screen and (max-width: 900px) {
+    .contact-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 450px) {
+    .contact-main-img img {
+      width: 100vw; } }
   .contact-main-info {
     z-index: 9;
     color: white;
@@ -1139,10 +1281,17 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 40%; }
+    @media only screen and (max-width: 900px) {
+      .contact-main-info {
+        width: 100%; } }
     .contact-main-info h1 {
       color: #ffff;
       margin-bottom: 2rem;
       transform: translateX(-10rem); }
+      @media only screen and (max-width: 900px) {
+        .contact-main-info h1 {
+          transform: translate(0);
+          text-align: center; } }
     .contact-main-info-item {
       z-index: 9;
       padding: 2rem; }

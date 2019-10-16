@@ -73,6 +73,19 @@ sans-serif;
 }
 // style menu style and specials item 
 @mixin infoStyle() {
+        @media only screen and (max-width:900px) {
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+     @media only screen and (max-width:450px) {
+         &-img img {
+            width:100vw;
+           
+        }
+     }
     &-info {
         z-index: 9;
 
@@ -87,11 +100,20 @@ sans-serif;
         flex-direction: column;
         justify-content: space-around;
         width: 40%;
-
+           @media only screen and (max-width:900px) {
+            width:100%;
+            
+        }
+        
         & h1 {
             color: $color-white;
             margin-bottom: 2rem;
             transform: translateX(-10rem);
+             @media only screen and (max-width:900px) {
+            transform: translate(0);
+            text-align:center;
+            
+        }
 
         }
 
@@ -135,10 +157,18 @@ sans-serif;
     justify-content: center;
     position: relative;
     padding: 10rem 0;
-
+     @media only screen and (max-width:900px) {
+               margin-top:0;
+               padding:5rem 0;
+           }
     & img {
         transform: translate($Xtranslate, -30%);
+         @media only screen and (max-width:900px) {
+
+        transform: translate(0, 0);
     }
+    }
+    
 
     align-items: center;
 }
@@ -148,4 +178,7 @@ sans-serif;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+           @media only screen and (max-width:900px) {
+               background:none!important;
+           }
 }

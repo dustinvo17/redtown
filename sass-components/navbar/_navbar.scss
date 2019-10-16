@@ -27,16 +27,17 @@
     grid-template-columns: 20rem 1fr;
     background: transparent;
     position: fixed;
-    
+
     width: 100%;
     z-index: 999999;
-    
-            @media only screen and (max-width:1150px) {
 
-                display:flex;
-                justify-content: space-between;
+    @media only screen and (max-width:1150px) {
 
-            }
+        display: flex;
+        justify-content: space-between;
+
+    }
+
     &-logo {
         width: 15rem;
         padding: 0 1rem;
@@ -55,11 +56,13 @@
         padding: 3rem;
 
         &-book {
-            @include buttonBook($color-orange-light);
-                 @media only screen and (max-width:450px) {
+            --colorBtn:#F6D478;
+            @include buttonBook(var(--colorBtn));
 
-        display: none!important;
-    }
+            @media only screen and (max-width:450px) {
+
+                display: none !important;
+            }
         }
 
         &-hamburger {
@@ -95,10 +98,11 @@
                 width: 80%;
 
             }
-             @media only screen and (max-width:900px) {
+
+            @media only screen and (max-width:900px) {
 
                 width: 100%;
-                display:flex;
+                display: flex;
                 flex-direction: column;
             }
 
@@ -160,17 +164,20 @@
             right: 5%;
             width: 30%;
             transform: translateY(-50%);
-               @media only screen and (max-width:900px) {
-                   position: relative;
-                   top:0;
-                   right:0;
-                    transform: translateY(0);
-                    padding: 2rem;
-               } 
+
+            @media only screen and (max-width:900px) {
+                position: relative;
+                top: 0;
+                right: 0;
+                transform: translateY(0);
+                padding: 2rem;
+            }
+
             &-btn {
                 @include buttonBook($color-orange-light);
-                  
+
             }
+
             & p {
                 font-family: $font-muli;
                 font-weight: 400;
@@ -180,10 +187,11 @@
                 line-height: 2;
                 color: $color-gray-light;
                 margin-top: 2rem;
-                    @media only screen and (max-width:900px) {
 
-        display: none;
-    }
+                @media only screen and (max-width:900px) {
+
+                    display: none;
+                }
             }
         }
 
