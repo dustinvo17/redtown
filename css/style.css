@@ -23,7 +23,7 @@
     justify-content: flex-end;
     padding: 3rem; }
     .navbar-button-book {
-      --colorBtn:#F6D478;
+      --colorBtn: #F6D478;
       font-size: 1.3rem;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
@@ -324,7 +324,8 @@ h1 {
           line-height: 1.5; }
           @media only screen and (max-width: 450px) {
             .home-main-order-content-intro-item p {
-              font-size: 1.3rem; } }
+              font-size: 1.3rem;
+              padding-left: 0; } }
           @media only screen and (max-width: 450px) {
             .home-main-order-content-intro-item p {
               padding-left: 0; } }
@@ -739,7 +740,8 @@ h1 {
     line-height: 1.5; }
     @media only screen and (max-width: 450px) {
       .restaurant p {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        padding-left: 0; } }
   .restaurant-story {
     width: 60%;
     margin: 0 auto; }
@@ -834,6 +836,9 @@ h1 {
   justify-content: center;
   padding: 5rem 0;
   margin: 0 auto; }
+  @media only screen and (max-width: 450px) {
+    .menu-top {
+      text-align: center; } }
   .menu-top p {
     font-family: "Muli", sans-serif;
     font-size: 1.6rem;
@@ -846,7 +851,8 @@ h1 {
     margin-top: 5rem; }
     @media only screen and (max-width: 450px) {
       .menu-top p {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        padding-left: 0; } }
 
 .menu-food-1 {
   background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/menu/menu-bg-1.jpg");
@@ -907,6 +913,9 @@ h1 {
         font-size: 2.2rem;
         font-family: "Rufina", serif;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-1-info-item h3 {
+            font-size: 2rem; } }
       .menu-food-1-info-item div {
         display: flex;
         justify-content: space-between; }
@@ -917,6 +926,11 @@ h1 {
         font-size: 1.2rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-1-info-item p,
+          .menu-food-1-info-item span {
+            font-size: 1.1rem;
+            letter-spacing: 2px; } }
       .menu-food-1-info-item p {
         color: #F6D478; }
   .menu-food-1-info {
@@ -974,6 +988,9 @@ h1 {
         font-size: 2.2rem;
         font-family: "Rufina", serif;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-2-info-item h3 {
+            font-size: 2rem; } }
       .menu-food-2-info-item div {
         display: flex;
         justify-content: space-between; }
@@ -984,6 +1001,11 @@ h1 {
         font-size: 1.2rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-2-info-item p,
+          .menu-food-2-info-item span {
+            font-size: 1.1rem;
+            letter-spacing: 2px; } }
       .menu-food-2-info-item p {
         color: #F6D478; }
 
@@ -1046,6 +1068,9 @@ h1 {
         font-size: 2.2rem;
         font-family: "Rufina", serif;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-3-info-item h3 {
+            font-size: 2rem; } }
       .menu-food-3-info-item div {
         display: flex;
         justify-content: space-between; }
@@ -1056,6 +1081,11 @@ h1 {
         font-size: 1.2rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-3-info-item p,
+          .menu-food-3-info-item span {
+            font-size: 1.1rem;
+            letter-spacing: 2px; } }
       .menu-food-3-info-item p {
         color: #F6D478; }
   .menu-food-3-info {
@@ -1113,6 +1143,9 @@ h1 {
         font-size: 2.2rem;
         font-family: "Rufina", serif;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-4-info-item h3 {
+            font-size: 2rem; } }
       .menu-food-4-info-item div {
         display: flex;
         justify-content: space-between; }
@@ -1123,6 +1156,11 @@ h1 {
         font-size: 1.2rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase; }
+        @media only screen and (max-width: 450px) {
+          .menu-food-4-info-item p,
+          .menu-food-4-info-item span {
+            font-size: 1.1rem;
+            letter-spacing: 2px; } }
       .menu-food-4-info-item p {
         color: #F6D478; }
   .menu-food-4 p {
@@ -1141,6 +1179,9 @@ h1 {
   justify-content: center;
   padding: 5rem 0;
   margin: 0 auto; }
+  @media only screen and (max-width: 450px) {
+    .specials-top {
+      text-align: center; } }
   .specials-top h1 {
     padding: 1rem 0;
     border-bottom: 2px solid; }
@@ -1204,6 +1245,9 @@ h1 {
         font-size: 2.2rem;
         font-family: "Rufina", serif;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 450px) {
+          .specials-info-item h3 {
+            font-size: 2rem; } }
       .specials-info-item div {
         display: flex;
         justify-content: space-between; }
@@ -1214,21 +1258,34 @@ h1 {
         font-size: 1.2rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase; }
+        @media only screen and (max-width: 450px) {
+          .specials-info-item p,
+          .specials-info-item span {
+            font-size: 1.1rem;
+            letter-spacing: 2px; } }
       .specials-info-item p {
         color: #F6D478; }
-  .specials-info div {
-    flex-direction: column; }
-  .specials-info-date, .specials-info-price {
-    font-size: 1.2rem;
-    color: #F6D478;
-    font-family: "Oswald", sans-serif; }
-  .specials-info-slogan {
-    font-size: 1.6rem;
-    padding: 5rem;
-    line-height: 2;
-    font-family: "Muli", sans-serif; }
-  .specials-info-price {
-    text-align: end; }
+  .specials-info {
+    order: 2; }
+    @media only screen and (max-width: 450px) {
+      .specials-info {
+        margin-bottom: 5rem; } }
+    .specials-info div {
+      flex-direction: column; }
+    .specials-info-date, .specials-info-price {
+      font-size: 1.2rem;
+      color: #F6D478;
+      font-family: "Oswald", sans-serif; }
+    .specials-info-slogan {
+      font-size: 1.6rem;
+      padding: 5rem;
+      line-height: 2;
+      font-family: "Muli", sans-serif; }
+      @media only screen and (max-width: 450px) {
+        .specials-info-slogan {
+          padding: 2rem; } }
+    .specials-info-price {
+      text-align: end; }
 
 .contact-page {
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
@@ -1239,6 +1296,9 @@ h1 {
   justify-content: center;
   padding: 5rem 0;
   margin: 0 auto; }
+  @media only screen and (max-width: 450px) {
+    .contact-top {
+      text-align: center; } }
 
 .contact-main {
   background-image: linear-gradient(rgba(22, 26, 40, 0.6), rgba(22, 26, 40, 0.6)), url("../img/contact/contact-bg-top.jpg");
@@ -1299,6 +1359,9 @@ h1 {
         font-size: 2.2rem;
         font-family: "Rufina", serif;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 450px) {
+          .contact-main-info-item h3 {
+            font-size: 2rem; } }
       .contact-main-info-item div {
         display: flex;
         justify-content: space-between; }
@@ -1309,6 +1372,11 @@ h1 {
         font-size: 1.2rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase; }
+        @media only screen and (max-width: 450px) {
+          .contact-main-info-item p,
+          .contact-main-info-item span {
+            font-size: 1.1rem;
+            letter-spacing: 2px; } }
       .contact-main-info-item p {
         color: #F6D478; }
   .contact-main-top p {
@@ -1332,6 +1400,9 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   height: 50vh; }
+  @media only screen and (max-width: 450px) {
+    .book-top {
+      text-align: center; } }
   .book-top p {
     font-family: "Muli", sans-serif;
     font-size: 1.6rem;
@@ -1344,7 +1415,8 @@ h1 {
     line-height: 2; }
     @media only screen and (max-width: 450px) {
       .book-top p {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        padding-left: 0; } }
 
 *, body {
   margin: 0;

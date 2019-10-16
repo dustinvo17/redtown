@@ -20,17 +20,18 @@
 }
 
 .menu-food {
- 
+
     &-1 {
-        
+
         @include backgroundPage(url("../img/menu/menu-bg-1.jpg"));
 
         @include boxImgStyle(-5rem);
 
 
         @include infoStyle();
+
         &-info {
-            order:2;
+            order: 2;
         }
     }
 
@@ -52,8 +53,9 @@
 
 
         @include infoStyle();
-         &-info {
-            order:2;
+
+        &-info {
+            order: 2;
         }
     }
 

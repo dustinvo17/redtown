@@ -56,7 +56,7 @@
         padding: 3rem;
 
         &-book {
-            --colorBtn:#F6D478;
+            --colorBtn: #F6D478;
             @include buttonBook(var(--colorBtn));
 
             @media only screen and (max-width:450px) {

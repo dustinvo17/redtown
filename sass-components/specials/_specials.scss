@@ -23,8 +23,15 @@
     @include infoStyle();
 
     &-info {
+        order: 2;
+
+        @media only screen and (max-width:450px) {
+
+            margin-bottom: 5rem;
+        }
 
         & div {
+
             flex-direction: column;
         }
 
@@ -41,12 +48,17 @@
             padding: 5rem;
             line-height: 2;
             font-family: $font-muli;
-            ;
+
+            @media only screen and (max-width:450px) {
+
+                padding: 2rem;
+            }
         }
 
         &-price {
 
             text-align: end;
+
         }
     }
 }
