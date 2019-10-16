@@ -30,6 +30,10 @@ sans-serif;
     color: $color;
     margin: 2rem 0 6rem 0;
     line-height: 1.5;
+         @media only screen and (max-width:450px) {
+            font-size:1.3rem;
+                
+            }
 }
 
 @mixin btnArrow($color) {

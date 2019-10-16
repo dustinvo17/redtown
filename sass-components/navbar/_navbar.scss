@@ -27,10 +27,16 @@
     grid-template-columns: 20rem 1fr;
     background: transparent;
     position: fixed;
-
+    
     width: 100%;
     z-index: 999999;
+    
+            @media only screen and (max-width:1150px) {
 
+                display:flex;
+                justify-content: space-between;
+
+            }
     &-logo {
         width: 15rem;
         padding: 0 1rem;
@@ -49,9 +55,11 @@
         padding: 3rem;
 
         &-book {
+            @include buttonBook($color-orange-light);
+                 @media only screen and (max-width:450px) {
 
-            --colorBtn: #F6D478;
-            @include buttonBook(var(--colorBtn))
+        display: none!important;
+    }
         }
 
         &-hamburger {
@@ -159,6 +167,10 @@
                     transform: translateY(0);
                     padding: 2rem;
                } 
+            &-btn {
+                @include buttonBook($color-orange-light);
+                  
+            }
             & p {
                 font-family: $font-muli;
                 font-weight: 400;
