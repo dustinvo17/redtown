@@ -122,6 +122,9 @@
                 align-items: stretch;
                 margin-top: 7rem;
                 padding: 0;
+                 & p {
+                        padding:0 1rem;
+                    }
             }
 
             &-img {
@@ -136,6 +139,7 @@
                     & img {
                         width: 100%;
                     }
+                   
                 }
             }
 
