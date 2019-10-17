@@ -7,13 +7,16 @@
         @include pStyle($color-primary-dark)
     }
 
-      @include pageStyle();
-       padding-bottom:15rem!important;
+    @include pageStyle();
+    padding-bottom:15rem !important;
 
     &-story {
         width: 60%;
         margin: 0 auto;
 
+        @media only screen and (max-width:1135px) {
+            width: 100%;
+        }
 
         & h1 {
 
@@ -23,12 +26,19 @@
         }
 
         &-box {
+
+
+
             margin-top: 12rem;
             height: 40rem;
 
             display: flex;
             justify-content: space-around;
             position: relative;
+
+            @media only screen and (max-width:900px) {
+                display: none;
+            }
 
             &>* {
                 z-index: 9;
@@ -107,12 +117,26 @@
             justify-content: center;
             align-items: center;
 
+            @media only screen and (max-width:1350px) {
+                flex-direction: column;
+                align-items: stretch;
+                margin-top: 7rem;
+                padding: 0;
+            }
+
             &-img {
 
                 z-index: 10;
                 transform: translateY(-30%);
                 outline: none;
 
+                @media only screen and (max-width:1350px) {
+                    transform: translate(0);
+
+                    & img {
+                        width: 100%;
+                    }
+                }
             }
 
         }
@@ -134,10 +158,19 @@
     width: 60%;
     margin: 0 auto;
 
+    @media only screen and (max-width:1350px) {
+        width: 100%;
+    }
+
     &-text {
         padding: 4rem 6rem;
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width:600px) {
+            padding: 0 1rem;
+            flex-direction: column;
+        }
     }
 
     &-img {
@@ -145,6 +178,22 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 2rem;
+
+        @media only screen and (max-width:1350px) {
+            justify-content: center;
+
+            &-left,
+            &-right {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (max-width:600px) {
+            &-mid {
+                width: 100vw;
+            }
+        }
 
         & img {
             box-shadow: 1rem 2rem 2rem 0 rgba(0, 0, 0, .23);

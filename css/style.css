@@ -13,6 +13,9 @@
   .navbar-logo {
     width: 15rem;
     padding: 0 1rem; }
+    @media only screen and (max-width: 450px) {
+      .navbar-logo {
+        width: 12rem; } }
     .navbar-logo-img {
       width: 100%;
       height: 10rem;
@@ -745,6 +748,9 @@ h1 {
   .restaurant-story {
     width: 60%;
     margin: 0 auto; }
+    @media only screen and (max-width: 1135px) {
+      .restaurant-story {
+        width: 100%; } }
     .restaurant-story h1 {
       position: relative;
       z-index: 9;
@@ -755,6 +761,9 @@ h1 {
       display: flex;
       justify-content: space-around;
       position: relative; }
+      @media only screen and (max-width: 900px) {
+        .restaurant-story-box {
+          display: none; } }
       .restaurant-story-box > * {
         z-index: 9; }
       .restaurant-story-box:after {
@@ -800,10 +809,21 @@ h1 {
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media only screen and (max-width: 1350px) {
+        .restaurant-story-history {
+          flex-direction: column;
+          align-items: stretch;
+          margin-top: 7rem;
+          padding: 0; } }
       .restaurant-story-history-img {
         z-index: 10;
         transform: translateY(-30%);
         outline: none; }
+        @media only screen and (max-width: 1350px) {
+          .restaurant-story-history-img {
+            transform: translate(0); }
+            .restaurant-story-history-img img {
+              width: 100%; } }
   .restaurant .restaurant-mid-image {
     margin: 4rem 0; }
     .restaurant .restaurant-mid-image img {
@@ -815,15 +835,30 @@ h1 {
 .restaurant-main {
   width: 60%;
   margin: 0 auto; }
+  @media only screen and (max-width: 1350px) {
+    .restaurant-main {
+      width: 100%; } }
   .restaurant-main-text {
     padding: 4rem 6rem;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 600px) {
+      .restaurant-main-text {
+        padding: 0 1rem;
+        flex-direction: column; } }
   .restaurant-main-img {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem; }
+    @media only screen and (max-width: 1350px) {
+      .restaurant-main-img {
+        justify-content: center; }
+        .restaurant-main-img-left, .restaurant-main-img-right {
+          display: none; } }
+    @media only screen and (max-width: 600px) {
+      .restaurant-main-img-mid {
+        width: 100vw; } }
     .restaurant-main-img img {
       box-shadow: 1rem 2rem 2rem 0 rgba(0, 0, 0, 0.23); }
 
