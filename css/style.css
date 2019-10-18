@@ -970,8 +970,9 @@ h1 {
             letter-spacing: 2px; } }
       .menu-food-1-info-item p {
         color: #F6D478; }
-  .menu-food-1-info {
-    order: 2; }
+  @media only screen and (max-width: 900px) {
+    .menu-food-1-info {
+      order: 2; } }
 
 .menu-food-2 {
   margin-top: 15rem;
@@ -1125,8 +1126,9 @@ h1 {
             letter-spacing: 2px; } }
       .menu-food-3-info-item p {
         color: #F6D478; }
-  .menu-food-3-info {
-    order: 2; }
+  @media only screen and (max-width: 900px) {
+    .menu-food-3-info {
+      order: 2; } }
 
 .menu-food-4 {
   margin-top: 15rem;
@@ -1302,27 +1304,28 @@ h1 {
             letter-spacing: 2px; } }
       .specials-info-item p {
         color: #F6D478; }
-  .specials-info {
-    order: 2; }
+  @media only screen and (max-width: 450px) {
+    .specials-info {
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 900px) {
+    .specials-info {
+      order: 2; } }
+  .specials-info div {
+    flex-direction: column; }
+  .specials-info-date, .specials-info-price {
+    font-size: 1.2rem;
+    color: #F6D478;
+    font-family: "Oswald", sans-serif; }
+  .specials-info-slogan {
+    font-size: 1.6rem;
+    padding: 5rem;
+    line-height: 2;
+    font-family: "Muli", sans-serif; }
     @media only screen and (max-width: 450px) {
-      .specials-info {
-        margin-bottom: 5rem; } }
-    .specials-info div {
-      flex-direction: column; }
-    .specials-info-date, .specials-info-price {
-      font-size: 1.2rem;
-      color: #F6D478;
-      font-family: "Oswald", sans-serif; }
-    .specials-info-slogan {
-      font-size: 1.6rem;
-      padding: 5rem;
-      line-height: 2;
-      font-family: "Muli", sans-serif; }
-      @media only screen and (max-width: 450px) {
-        .specials-info-slogan {
-          padding: 2rem; } }
-    .specials-info-price {
-      text-align: end; }
+      .specials-info-slogan {
+        padding: 2rem; } }
+  .specials-info-price {
+    text-align: end; }
 
 .contact-page {
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/home/background-mid.png");
