@@ -30,8 +30,11 @@
 
         @include infoStyle();
 
-        &-info {
-            order: 2;
+        @media only screen and (max-width:900px) {
+
+            &-info {
+                order: 2;
+            }
         }
     }
 
@@ -54,8 +57,11 @@
 
         @include infoStyle();
 
-        &-info {
-            order: 2;
+        @media only screen and (max-width:900px) {
+
+            &-info {
+                order: 2;
+            }
         }
     }
 
